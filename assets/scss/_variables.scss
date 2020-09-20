@@ -4,15 +4,20 @@
 $light-background: #fff;
 $light-background-secondary: #eaeaea;
 $light-color: #222;
-$light-color-secondary: #999;
+$light-color-secondary: #444;
 $light-border-color: #dcdcdc;
 
 /* dark theme colors */
 $dark-background: #292a2d;
 $dark-background-secondary: #3b3d42;
-$dark-color: #a9a9b3;
-$dark-color-secondary: #73747b;
+// $dark-color: #a9a9b3;
+$dark-color: #ddd;
+// $dark-color-secondary: #73747b;
+$dark-color-secondary: #bbb;
 $dark-border-color: #4a4b50;
+
+/* feature colours */
+$feature-color-one: #d4af37;
 
 $media-size-phone: "(max-width: 684px)";
 $media-size-tablet: "(max-width: 900px)";

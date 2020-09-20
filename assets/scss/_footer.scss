@@ -2,6 +2,13 @@
   padding: 40px 20px;
   flex-grow: 0;
   color: $light-color-secondary;
+  // background: rgba($light-background, 0.6);
+  // @include jagged(ffffff99, 20, top);
+
+  // .dark-theme & {
+  //   background: rgba($dark-background, 0.6);
+  //   @include jagged(292a2d99, 20, top);
+  // }
 
   &__inner {
     display: flex;
@@ -10,6 +17,7 @@
     margin: 0 auto;
     width: 760px;
     max-width: 100%;
+    filter: unset;
 
     @media #{$media-size-tablet} {
       flex-direction: column;
@@ -22,6 +30,10 @@
     align-items: center;
     font-size: 1rem;
     color: $light-color-secondary;
+
+    .dark-theme & {
+      color: $dark-color-secondary;
+    }
 
     @media #{$media-size-tablet} {
       flex-direction: column;

@@ -1,13 +1,15 @@
 .header {
-  background: #fafafa;
+  background: rgba($feature-color-one, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 20px;
+  @include jagged(d4af3799, 20, bottom);
 
   .dark-theme & {
-    background: #252627;
+    background: rgba($feature-color-one, 0.2);
+    @include jagged(d4af3733, 20, bottom);
   }
 
   &__right {

@@ -48,3 +48,21 @@
   src: url("../fonts/Inter-UI-BoldItalic.woff2") format("woff2"),
        url("../fonts/Inter-UI-BoldItalic.woff") format("woff");
 }
+
+@font-face {
+  font-family: 'Cascadia Code';
+  font-style:  normal;
+  font-display: auto;
+  font-weight: 300;
+  src: url("../fonts/CascadiaCode-Light.woff2") format("woff2"),
+       url("../fonts/CascadiaCode-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  font-style:  normal;
+  font-display: auto;
+  font-weight: 700;
+  src: url("../fonts/CascadiaCode-Bold.woff2") format("woff2"),
+       url("../fonts/CascadiaCode-Bold.woff") format("woff");
+}
