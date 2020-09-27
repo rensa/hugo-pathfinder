@@ -1,24 +1,36 @@
 @charset "UTF-8";
 
-/* light theme color */
+/* light theme colors */
+
+// backgrounds
 $light-background: #fff;
 $light-background-secondary: #eaeaea;
+
+// text
 $light-color: #222;
 $light-color-secondary: #444;
 $light-border-color: #dcdcdc;
 
+// feature (hero) colours (must be hex codes!)
+$light-feature-color-one: #4b0082;
+$light-feature-color-two: #21abcd;
+
 /* dark theme colors */
+
+// backgrounds
 $dark-background: #292a2d;
 $dark-background-secondary: #3b3d42;
-// $dark-color: #a9a9b3;
+
+// text
 $dark-color: #ddd;
-// $dark-color-secondary: #73747b;
 $dark-color-secondary: #bbb;
 $dark-border-color: #4a4b50;
 
-/* feature colours */
-$feature-color-one: #0000ff;
-$feature-color-two: #ff0000;
+// feature (hero) colours (must be hex codes!)
+$dark-feature-color-one: #fb0082;
+$dark-feature-color-two: #21abcd;
+
+/* other variables */
 
 $media-size-phone: "(max-width: 684px)";
 $media-size-tablet: "(max-width: 900px)";

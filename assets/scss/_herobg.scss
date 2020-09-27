@@ -43,5 +43,9 @@
   animation-name: scrolldiag;
   background-size: 600px;
   // background-image: url(_mapbg('#ff0000', '#0000ff'));
-  background-image: url(_mapbg($feature-color-one, $feature-color-two));
+  background-image: url(_mapbg($light-feature-color-one, $light-feature-color-two));
+
+  .dark-theme & {
+    background-image: url(_mapbg($dark-feature-color-one, $dark-feature-color-two));
+  }
 }
