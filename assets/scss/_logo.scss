@@ -22,10 +22,15 @@
     display: inline-block;
     width: 10px;
     height: 1rem;
-    background: #fe5186;
+    background: rgba($light-color, 0.4);
     margin-left: 5px;
+    margin-bottom: 2px;
     border-radius: 1px;
     animation: cursor 1s infinite;
+
+    .dark-theme & {
+      background: rgba($dark-color, 0.4);
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
