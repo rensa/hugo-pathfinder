@@ -1,3 +1,9 @@
+# Pathfinder
+
+Pathfinder is a fork of the Hello Friend NG theme by Djordje Atlialp. The fork adds an animated map background to the front page, hero colour gradients to the header and map background, and some font changes (Bitter is used for headings). In addition to the configuration options below from the source theme, you can change the hero colours by modifying them in `/assets/scss/_variables.scss`.
+
+- [James Goldie](https://jamesgoldie.dev)
+
 # Hello Friend NG
 
 ![Hello Friend NG](https://dsh.re/2bd45)
