@@ -47,8 +47,11 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-family: 'Bitter';
   font-size: 2.625rem;
+}
+
+h1, h2.post-title {
+  font-family: 'Bitter';
 }
 
 h2 {
@@ -275,6 +278,7 @@ ol ol {
   margin: 4rem;
 
   h1 {
+    font-family: 'Bitter';
     font-size: 4rem;
     margin: 1rem 0 0 0;
   }
