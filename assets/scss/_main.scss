@@ -47,6 +47,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-family: 'Bitter';
   font-size: 2.625rem;
 }
 
@@ -82,6 +83,7 @@ h4 {
 
 a {
   color: inherit;
+  font-weight: bold;
 }
 
 img {
@@ -167,7 +169,7 @@ figure {
 }
 
 code {
-  font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+  font-family: 'Cascadia Code', Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
   font-display: auto;
   font-feature-settings: normal;
   background: $light-background-secondary;
@@ -266,6 +268,36 @@ ol ol {
 
   @media #{$media-size-phone} {
     margin-top: 0;
+  }
+}
+
+.site-headline {
+  margin: 4rem;
+
+  h1 {
+    font-size: 4rem;
+    margin: 1rem 0 0 0;
+  }
+
+  h2 {
+    display: block;
+    margin-top: 0;
+    font-weight: normal;
+
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+@media #{$media-size-phone} {
+  .site-headline {
+    margin: 2rem;
+
+    h1 {
+      margin: 1rem 0 0 0;
+      font-size: 2.5rem;
+    }
   }
 }
 
