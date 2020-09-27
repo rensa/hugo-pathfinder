@@ -1,14 +1,14 @@
 {{ define "main" }}
     <div class="herobglayer mapbg"></div>
     <main aria-role="main">
-        <div>
+        <div class="site-headline">
             {{ if .Site.Params.Portrait.Path }}
                <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
             {{ end }}
 
             <h1>{{ .Site.Title }}</h1>
-            {{- with .Site.Params.homeSubtitle }}
-                <p>{{.}}</p>
+            {{- with .Site.Params.homeSubtitle | markdownify }}
+                <h2>{{.}}</h2>
             {{- end }}
 
             {{- with .Site.Params.social }}
