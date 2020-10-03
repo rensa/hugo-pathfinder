@@ -3,6 +3,9 @@
     
     <main class="posts">
         <h1>{{ .Title }}</h1>
+        {{ with .Description }}
+            <p class="lead">{{ . | markdownify }}</p>
+        {{ end }}
 
         {{ if .Content }}
             <div class="content">{{ .Content }}</div>
