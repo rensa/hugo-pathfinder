@@ -35,7 +35,7 @@
   }
 
   .post {
-    &-title {
+    &-title, &-description {
       font-size: 1rem;
       margin: 5px 0 5px 0;
     }
@@ -57,9 +57,7 @@
       border-bottom: 1px grey dashed;
 
       a {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+        display: block;
         padding: 12px 0;
         text-decoration: none;
       }

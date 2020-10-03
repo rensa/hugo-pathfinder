@@ -50,7 +50,7 @@ h1 {
   font-size: 2.625rem;
 }
 
-h1, h2.post-title {
+h1, .content .posts h2, .post-content h2 {
   font-family: 'Bitter';
 }
 
@@ -68,6 +68,12 @@ h4 {
 
 .lead {
   font-size:1.5rem;
+}
+
+.subtle {
+  font-weight: normal;
+  opacity: 0.6;
+  font-style: italic;
 }
 
 @media #{$media-size-phone} {
