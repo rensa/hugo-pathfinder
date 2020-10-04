@@ -267,6 +267,19 @@ ol ol {
   list-style-type: lower-alpha;
 }
 
+.extlink {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+
+  background: linear-gradient(to right, rgba($light-feature-color-one, 0.4), rgba($light-feature-color-two, 0.4));
+
+  .dark-theme & {
+    background: linear-gradient(45deg, rgba($dark-feature-color-one, 0.2), rgba($dark-feature-color-two, 0.2));
+  }
+}
+
 .container {
   flex: 1 auto;
   display: flex;

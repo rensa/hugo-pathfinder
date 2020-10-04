@@ -22,6 +22,11 @@
         <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
       </h1>
 
+      {{ with .Params.Extlink }}
+          {{ $parsedlink := . | urls.Parse }}
+          <a class="extlink" href="{{ . }}">Find this on {{ $parsedlink.Host }}</a>
+      {{ end }}
+
       {{- if .Params.toc }}
         <hr />
         <aside id="toc">
