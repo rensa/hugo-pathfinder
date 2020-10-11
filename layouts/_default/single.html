@@ -17,7 +17,7 @@
         </div>
 
         <article>
-            <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+            <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
             {{ with .Description }}
                 <p class="lead">{{ . | markdownify }}</p>
             {{ end }}
@@ -121,11 +121,30 @@
 
 
             {{ if .Site.DisqusShortname }}
-            {{ if not (eq .Params.Comments "false") }}
-                <div id="comments">
-                {{ template "_internal/disqus.html" . }}
-                </div>
+                {{ if not (eq .Params.Comments "false") }}
+                    <div id="comments">
+                    {{ template "_internal/disqus.html" . }}
+                    </div>
+                {{ end }}
             {{ end }}
+
+            {{ if .Params.ShowRelated }}
+                {{ $related := .Site.RegularPages.Related . | first 5 }}
+                {{ with $related }}
+                <h2>Related work</h2>
+                <ul class="posts posts-list">
+                    {{ range . }}
+                    <li class="post-item">
+                        <a href="{{.Permalink}}">
+                            <p class="post-title">{{.Title}}</p>
+                            {{ with .Description }}
+                                <p class="post-description subtle">{{ . | markdownify }}</p>
+                            {{ end }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+                {{ end }}
             {{ end }}
 
     </main>

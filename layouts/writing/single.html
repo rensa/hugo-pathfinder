@@ -141,5 +141,25 @@
       {{ end }}
     {{ end }}
 
+    
+    {{ if .Params.ShowRelated }}
+      {{ $related := .Site.RegularPages.Related . | first 5 }}
+      {{ with $related }}
+      <h2>Related work</h2>
+      <ul class="posts posts-list">
+        {{ range . }}
+        <li class="post-item">
+          <a href="{{.Permalink}}">
+              <p class="post-title">{{.Title}}</p>
+              {{ with .Description }}
+                  <p class="post-description subtle">{{ . | markdownify }}</p>
+              {{ end }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    {{ end }}
+
   </main>
 {{ end }}
