@@ -142,7 +142,7 @@
     {{ end }}
 
     
-    {{ if .Params.ShowRelated }}
+    {{ if .Params.Showrelated }}
       {{ $related := .Site.RegularPages.Related . | first 5 }}
       {{ with $related }}
       <h2>Related work</h2>
