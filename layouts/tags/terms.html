@@ -1,0 +1,23 @@
+{{ define "main" }}
+    
+    <main class="posts">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}
+            <p class="lead">{{ . | markdownify }}</p>
+        {{ end }}
+
+        {{ if .Content }}
+            <div class="content">{{ .Content }}</div>
+        {{ end }}
+
+        <ul class="tag-list">
+        {{ range .Data.Pages }}
+            <li class="tag-item">
+                <a href="{{.Permalink}}">
+                    <p class="tag-title">#{{.Title}}</p>
+                </a>
+            </li>
+        {{ end }}
+        </ul>
+    </main>
+{{ end }}
