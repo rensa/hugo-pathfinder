@@ -11,7 +11,7 @@
         {{ end }}
 
         <ul class="tag-list">
-        {{ range .Data.Pages }}
+        {{ range sort .Data.Pages "Title" "asc"}}
             <li class="tag-item">
                 <a href="{{.Permalink}}">
                     <p class="tag-title">#{{.Title}}</p>
