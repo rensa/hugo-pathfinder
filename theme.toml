@@ -2,14 +2,14 @@ name = "pathfinder"
 license = "MIT"
 licenselink = "https://github.com/rensa/hugo-pathfinder/blob/master/LICENSE.md"
 description = "A simple theme for Hugo. That's it."
-tags = ["blog", "clean", "customizable", "dark", "highlighting", "light", "minimal", "monochromatic", "multilingual", "personal", "responsive", "simple", "technical"]
+tags = ["blog", "clean", "customizable", "dark", "highlighting", "light", "minimal", "multilingual", "personal", "responsive", "simple", "technical"]
 features = ["blog", "shortcode", "syntax highlighting"]
 min_version = 0.1
 
 [author]
   name = "James Goldie"
   homepage = "https://jamesgoldie.dev"
-  twitter = "https://twitter.com/rensa"
+  twitter = "https://twitter.com/rensa_co"
 
 [original]
   name = "pathfinder"
